@@ -1,47 +1,59 @@
 ---
-title: PLACEHOLDER TITLE
+title: Build Python packages for Windows on Arm
 
-minutes_to_complete: 10
+description: Learn how to use GitHub Actions windows-11-arm runners to build and distribute Python wheel packages for Windows on Arm using cibuildwheel, setuptools, and other build tools.
 
-who_is_this_for: PLACEHOLDER SENTENCE
+minutes_to_complete: 45
 
-learning_objectives: 
-    - PLACEHOLDER OBJECTIVE 1
-    - PLACEHOLDER OBJECTIVE 2
+who_is_this_for: This is an introductory topic for Python package maintainers who want to build and publish Windows on Arm compatible wheel packages using GitHub Actions.
+
+learning_objectives:
+    - Describe the windows-11-arm GitHub Actions runner and how it differs from windows-latest and windows-2025
+    - Configure a GitHub Actions workflow matrix to target windows-11-arm runners
+    - Build Python wheel packages for Windows on Arm using cibuildwheel
+    - Build Python wheel packages using setuptools and actions/setup-python
+    - Apply alternative build tools such as Bazel, CMake, and conda for Windows on Arm Python packages
+    - Test and validate Windows on Arm Python packages
 
 prerequisites:
-    - PLACEHOLDER PREREQ 1
-    - PLACEHOLDER PREREQ 2
+    - A GitHub account with repository access and GitHub Actions enabled
+    - Familiarity with Python packaging concepts (wheels, setup.py, pyproject.toml)
+    - Basic knowledge of GitHub Actions workflow syntax
 
 author: PLACEHOLDER NAME
 
 ### Tags
-skilllevels: PLACEHOLDER SKILLLEVEL
-subjects: PLACEHOLDER SUBJECT
+skilllevels: Introductory
+subjects: CI-CD
 armips:
-    - PLACEHOLDER IP A
-    - PLACEHOLDER IP B
+    - Cortex-A
 tools_software_languages:
-    - PLACEHOLDER TOOL OR SOFTWARE C
-    - PLACEHOLDER TOOL OR SOFTWARE D
+    - Python
+    - GitHub
+    - cibuildwheel
+    - setuptools
 operatingsystems:
-    - PLACEHOLDER OS G
+    - Windows
 
 
 
 further_reading:
     - resource:
-        title: PLACEHOLDER MANUAL 
-        link: PLACEHOLDER MANUAL LINK
-        type: documentation
-    - resource:
-        title: PLACEHOLDER BLOG 
-        link: PLACEHOLDER BLOG LINK
+        title: GitHub Actions now supports Windows on Arm runners for all public repos
+        link: https://blogs.windows.com/windowsdeveloper/2025/04/14/github-actions-now-supports-windows-on-arm-runners-for-all-public-repos/
         type: blog
     - resource:
-        title: PLACEHOLDER GENERAL WEBSITE 
-        link: PLACEHOLDER GENERAL WEBSITE LINK
-        type: website
+        title: cibuildwheel documentation
+        link: https://cibuildwheel.pypa.io/
+        type: documentation
+    - resource:
+        title: Python packaging user guide
+        link: https://packaging.python.org/
+        type: documentation
+    - resource:
+        title: GitHub Actions Partner Images Repository
+        link: https://github.com/actions/partner-runner-images/
+        type: documentation
 
 
 
