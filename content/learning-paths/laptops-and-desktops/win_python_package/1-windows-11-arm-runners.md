@@ -29,5 +29,6 @@ Key considerations:
 - Binaries compiled on `windows-11-arm` run natively on Arm hardware without emulation.
 - Some tools and runtimes that work on `windows-latest` may not yet have Arm-native builds. Check compatibility before adding `windows-11-arm` to an existing matrix.
 - Python versions earlier than 3.11 do not ship an official Windows on Arm build from python.org. See [Add windows-11-arm to your GitHub Actions matrix](../how-to-2) for how to exclude unsupported versions.
+- Python versions earlier than 3.11 do not ship an official Windows on Arm build from python.org. See [Add windows-11-arm to your GitHub Actions matrix](../2-github-actions-matrix) for how to exclude unsupported versions.
 
 YOUR CONTENT GOES HERE
