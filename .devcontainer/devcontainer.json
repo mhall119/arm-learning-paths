@@ -11,9 +11,8 @@
 
     "mounts": [
         "source=${localEnv:HOME}/.gitconfig,target=/home/ubuntu/.gitconfig-host,type=bind,readonly",
-        "source=${localEnv:HOME}/.ssh/id_ed25519.pub,target=/home/ubuntu/.ssh/id_ed25519.pub,type=bind,readonly"
+        "source=${localEnv:HOME}/.ssh,target=/home/ubuntu/.ssh-host,type=bind,readonly"
     ],
-    
-    "postCreateCommand": "bash .devcontainer/setup-git.sh"
 
+    "postCreateCommand": "bash .devcontainer/setup-git.sh"
 }
